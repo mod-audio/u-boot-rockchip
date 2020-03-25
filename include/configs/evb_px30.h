@@ -15,9 +15,6 @@
 		"stdout=serial,vidconsole\0" \
 		"stderr=serial,vidconsole\0"
 
-#undef CONFIG_CONSOLE_SCROLL_LINES
-#define CONFIG_CONSOLE_SCROLL_LINES		10
-
 #ifndef CONFIG_SPL_BUILD
 #undef CONFIG_BOOTCOMMAND
 #define CONFIG_BOOTCOMMAND RKIMG_BOOTCOMMAND
