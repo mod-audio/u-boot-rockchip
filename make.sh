@@ -713,6 +713,6 @@ select_ini_file
 handle_args_late
 sub_commands
 clean_files
-make PYTHON=python2 CROSS_COMPILE=${TOOLCHAIN_GCC} all --jobs=${JOB}
+make PYTHON=python2 CROSS_COMPILE=${TOOLCHAIN_GCC} u-boot.bin --jobs=${JOB}
 pack_images
 finish
