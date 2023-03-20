@@ -264,6 +264,9 @@ ifeq ($(HOSTOS),cygwin)
 HOSTCFLAGS	+= -ansi
 endif
 
+# fix build with gcc >= 10
+HOSTCFLAGS	+= -fcommon
+
 # Mac OS X / Darwin's C preprocessor is Apple specific.  It
 # generates numerous errors and warnings.  We want to bypass it
 # and use GNU C's cpp.	To do this we pass the -traditional-cpp
