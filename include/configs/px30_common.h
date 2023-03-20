@@ -91,7 +91,7 @@
 	"fdt_addr_r=0x08300000\0" \
 	"kernel_addr_r=0x00280000\0" \
 	"bootdelay=1\0" \
-	"bootcmd=run boot_main; run boot_restore; run boot_maskrom\0" \
+	"bootcmd=if test -e mmc 0:5 /boot-restore; then run boot_restore; else run boot_main; fi; run boot_restore; run boot_maskrom\0" \
 	"console=ttyS2,115200n8\0" \
 	"loglevel=8\0" \
 	"bootenv=/uEnv-ff-px30.txt\0" \
