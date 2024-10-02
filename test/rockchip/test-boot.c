@@ -53,7 +53,7 @@ static cmd_tbl_t sub_cmd[] = {
 #endif
 };
 
-static const char sub_cmd_help[] =
+static const char sub_cmd_help[] = ""
 #ifdef CONFIG_CMD_BOOT_ANDROID
 "    [n] rktest android                     - test android bootflow\n"
 #endif
